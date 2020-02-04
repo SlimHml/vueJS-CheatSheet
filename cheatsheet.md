@@ -28,3 +28,7 @@ Ici, le **v-model** est branché sur **l'input** et sur **newCat** dans **data**
 ![alt text](./images/screenVue6.png)
 
 Ici, on a ajouté un nouvel **écouteur d'évènement**, qui est sur keyup, si on ne précise pas une touche, n'importe quelle touche activera **addKitty**, d'où la précision **.enter** pour indiquer seulement la touche **entrée**
+
+![alt text](./images/screenVue7.png)
+
+Simple modification afin de **clean** l'input, la methode **addKitty** se voit ajouter une string vide sur **l'input** où est branché le **v-model**
