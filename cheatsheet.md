@@ -7,3 +7,7 @@ Ici, l'id "Root" dans le HTML est branché à l'élément dans l'instance de Vue
 Le **v-model** est une directive connecté à **L'input** et branché à **L'email** indiqué dans la **Data** de **l'instance de vue** permet de faire transiter les infos dans les deux sens, **:class** permet d'appliquer une classe CSS (ici sous condition ternaire, sous 2 le cadre est **rouge**, au dessus il passe au **vert**)
 
 **onclick** est un **écouteur d'évènement** qui déclenche une alerte dans ce cas ci, et le bouton est **:disabled** si le contenu de l'input est inférieur à 2, celui-ci sera **incliquable**
+
+![alt text](./images/screenVue2.png)
+
+Ici, **l'interpolation** (les doubles accolades, ou moustaches) permet d'adapter le contenu de la balise <p> (dans ce cas-ci) au contenu de **email** indiqué dans la data, l'email **cats@cats.com** écrit en dur permet juste de démontrer que le v-once bloque **toute nouvelle tentative de modification dans l'input**
