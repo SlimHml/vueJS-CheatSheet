@@ -78,4 +78,4 @@ Nous obtenons effectivement une promesse dans le console.log
 
 ![alt text](./images/screenVue18.png)
 
-Ci-dessus, une fonction **data** pond un **objet** contenant un **tableau** nommé **questions**, celui-ci sera rempli via la succession de .then, qui a parser a réponse en **.json**, puis injecter ce **jsonData** dans le **tableau questions** avec le **.result** qui va bien, ce **.result** correspond à ce que l'**API** emet, celle-ci emet un code, et **result**, qui contient les **questions / réponses**
+Ci-dessus, une fonction **data** pond un **objet** contenant un **tableau** nommé **questions**, celui-ci sera rempli via la succession de .then, qui a parsé la réponse en **.json**, puis injecter ce **jsonData** dans le **tableau questions** avec le **.result** qui va bien, ce **.result** correspond à ce que l'**API** emet, celle-ci emet un code, et **result**, qui contient les **questions / réponses**
