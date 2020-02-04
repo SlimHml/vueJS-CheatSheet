@@ -61,3 +61,9 @@ Ci-dessus, il s'agit des cycles de vie. Voir les cycles de vie, **IMPORTANT**
 Ci-dessus, nous abordons vue CLI, **vue create 'nom du dossier'** crée un boiler plate (en fonction des parametres de création), avec une arborescence préconçue, le point d'injection se trouve sur une **id** app dans le /public HTML, monté à partir de main.js, qui a sa source en **App.vue**, ici, deux fichiers de **composants** (dans components) ont été crées (**Header.vue et QuestionBox.vue**), ceux-ci ont été exportés dans une balise script, puis importés dans **App.vue**, dans le script donc, via "**import xxx from 'xxx'**, utilisés dans une balise auto fermante dans le **template** (non affiché sur le screenshot) puis exportés dans la section **components** du script d'**App.vue** afin que le main.js l'injecte dans l'**HTML**
 
 L'ordre dans lequel sont "**utilisés**" les composants dans le template compte, le **Header** appelé **avant**, sera donc au dessus de **QuestionBox** appelé **en dessous**
+
+![alt text](./images/screenVue14.png)
+
+Ci-dessus, nous avons un exemple de **consommation d'API**, nous indiquons dans le script d'**App.vue** quand nous **souhaitons** exécuter la fonction anonyme, qui va **GET** les informations de l'**API** via l'**URL** et **fetch** (équivalent d'**Axios** mais qui est inné dans **Javascript**, donc **indépendant**)
+
+Dans cet exemple, la **fonction** sera executée lors du **cycle de vie** **MOUNTED**.
