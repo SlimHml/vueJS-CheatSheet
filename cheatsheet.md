@@ -68,7 +68,6 @@ Ci-dessus, nous avons un exemple de **consommation d'API**, nous indiquons dans 
 
 Dans cet exemple, la **fonction** sera executée lors du **cycle de vie** **MOUNTED**.
 
-
 ![alt text](./images/screenVue15.png)
 
-Le **console.log** du screenshot du dessus pose problème, en effet, il n'accepte pas de CL dans le script, pour régler ceci, il faut se rendre ici: ![alt text](./images/screenVue16.png) et insérer dans **rules** le no-console: false ou 0
+Le **console.log** du screenshot du dessus pose problème, en effet, il n'accepte pas de CL dans le script, pour régler ceci, il faut se rendre ici: ![alt text](./images/screenVue16.png) et insérer dans **rules** le **no-console: false ou 0**
