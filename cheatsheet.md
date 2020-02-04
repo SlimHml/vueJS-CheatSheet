@@ -49,3 +49,9 @@ Mais grosso modo, il s'agit d'améliorer les performances dans certains cas
 ![alt text](./images/screenVue11.png)
 
 Ici, nous abordons la notion de composant, il est crée dans ce cas ci, dans une instance "**component**", avec le nom du composant (cat-list), nous avons utilisé la directive **v-bind** dans le HTML dans la **balise auto fermante** incluse dans la balise racine (#root), avec dans son template la même **li** contenant le **v-for**, un **v-bind** à un endroit nécessite que l'on le lie grâce au **props** dans le script de l'endroit où nous incluons ce fameux **composant**
+
+![alt text](./images/screenVue12.png)
+
+Voir les cycles de vie, **IMPORTANT**
+
+[Cycles de vie VueJS](https://fr.vuejs.org/v2/guide/instance.html)
