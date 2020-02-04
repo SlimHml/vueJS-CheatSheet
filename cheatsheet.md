@@ -52,6 +52,6 @@ Ici, nous abordons la notion de composant, il est crée dans ce cas ci, dans une
 
 ![alt text](./images/screenVue12.png)
 
-Voir les cycles de vie, **IMPORTANT**
+Ci-dessus, il s'agit des cycles de vie. Voir les cycles de vie, **IMPORTANT**
 
 [Cycles de vie VueJS](https://fr.vuejs.org/v2/guide/instance.html)
