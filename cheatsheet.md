@@ -24,3 +24,7 @@ Ici même chose, nous pouvons boucler dans un tableau **d'objets**, on indique d
 
 ![alt text](./images/screenVue5.png)
 Ici, le **v-model** est branché sur **l'input** et sur **newCat** dans **data**, qui est à la base, un **string vide**, le **v-on:click** branché sur le bouton va déclencher l'évènement **addKitty**, qui fait appel à une **fonction** écrite dans **methods**, cette fonction va push dans **cats**, qui est, je le rappelle **un tableau d'objets**, un nouvel **objet** "**stringifié**" avec comme clé **name** et comme valeur le contenu de **l'input**
+
+![alt text](./images/screenVue6.png)
+
+Ici, on a ajouté un nouvel **écouteur d'évènement**, qui est sur keyup, si on ne précise pas une touche, n'importe quelle touche activera **addKitty**, d'où la précision **.enter** pour indiquer seulement la touche **entrée**
