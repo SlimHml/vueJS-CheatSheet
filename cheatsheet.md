@@ -55,3 +55,9 @@ Ici, nous abordons la notion de composant, il est crée dans ce cas ci, dans une
 Ci-dessus, il s'agit des cycles de vie. Voir les cycles de vie, **IMPORTANT**
 
 [Cycles de vie VueJS](https://fr.vuejs.org/v2/guide/instance.html)
+
+![alt text](./images/screenVue13.png)
+
+Ci-dessus, nous abordons vue CLI, **vue create 'nom du dossier'** crée un boiler plate (en fonction des parametres de création), avec une arborescence préconçue, le point d'injection se trouve sur une **id** app dans le /public HTML, monté à partir de main.js, qui a sa source en **App.vue**, ici, deux fichiers de **composants** (dans components) ont été crées (**Header.vue et QuestionBox.vue**), ceux-ci ont été exportés dans une balise script, puis importés dans **App.vue**, dans le script donc, via "**import xxx from 'xxx'**, utilisés dans une balise auto fermante dans le **template** (non affiché sur le screenshot) puis exportés dans la section **components** du script d'**App.vue** afin que le main.js l'injecte dans l'**HTML**
+
+L'ordre dans lequel sont "**utilisés**" les composants dans le template compte, le **Header** appelé **avant**, sera donc au dessus de **QuestionBox** appelé **en dessous**
