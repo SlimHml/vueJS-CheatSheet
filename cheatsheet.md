@@ -20,4 +20,7 @@ Grâce à la directive **v-for**, branchée à une **li** dans ce cas-ci, javasc
 
 ![alt text](./images/screenVue4.png)
 
-Ici même chose, nous pouvons boucler dans un tableau **d'objets**, on indique dans **l'interpolation** que l'on veut boucler dans le **nom** des chats
+Ici même chose, nous pouvons boucler dans un tableau **d'objets**, on indique dans **l'interpolation** que l'on veut boucler dans le **nom** des chats par un "**.quelquechose**"
+
+![alt text](./images/screenVue5.png)
+Ici, le **v-model** est branché sur l'input et sur **newCat** dans **data**, qui est à la base, un **string vide**, le **v-on:click** branché sur le bouton va déclencher l'évènement **addKitty**, qui fait appel à une **fonction** écrite dans **methods**, cette fonction va push dans **cats**, qui est, je le rappelle **un tableau d'objets**, un nouvel **objet** "**stringifié**" avec comme attribut **name** le contenu de **l'input**
