@@ -67,3 +67,8 @@ L'ordre dans lequel sont "**utilisés**" les composants dans le template compte,
 Ci-dessus, nous avons un exemple de **consommation d'API**, nous indiquons dans le script d'**App.vue** quand nous **souhaitons** exécuter la fonction anonyme, qui va **GET** les informations de l'**API** via l'**URL** et **fetch** (équivalent d'**Axios** mais qui est inné dans **Javascript**, donc **indépendant**)
 
 Dans cet exemple, la **fonction** sera executée lors du **cycle de vie** **MOUNTED**.
+
+
+![alt text](./images/screenVue15.png)
+
+Le **console.log** du screenshot du dessus pose problème, en effet, il n'accepte pas de CL dans le script, pour régler ceci, il faut se rendre ici: ![alt text](./images/screenVue16.png) et insérer dans **rules** le no-console: false ou 0
