@@ -91,3 +91,7 @@ Afin de remplir la **balise enfant** **QuestionBox** avec les questions / répon
 ![alt text](./images/screenVue21.png)
 
 Il y'a dont **l'interpolation** dans la balise où nous souhaitons y mettre nos questions, mais afin d'utiliser cette **variable**, le **props** a bien été collé dans le **script**, avec le nom de la **variable** contenu dans le **parent** (**App.vue**), et désignant sa **nature**, en l'occurence: **Object**
+
+![alt text](./images/screenVue22.png)
+
+La première question est donc affichée dans l'emplacement indiqué
