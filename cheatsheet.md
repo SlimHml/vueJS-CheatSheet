@@ -11,3 +11,9 @@ Le **v-model** est une directive connecté à **L'input** et branché à **L'ema
 ![alt text](./images/screenVue2.png)
 
 Ici, **l'interpolation** (les doubles accolades, ou moustaches) permet d'adapter le contenu de la balise <p> (dans ce cas-ci) au contenu de **email** indiqué dans la data, l'email **cats@cats.com** écrit en dur permet juste de démontrer que le v-once bloque **toute nouvelle tentative de modification dans l'input**
+
+![alt text](./images/screenVue3.png)
+
+Ici, on indique dans la data **cats**, qui est un **tableau**, des noms de chats écrits en dur
+
+Grâce à la directive **v-for**, branchée à une **li** dans ce cas-ci, javascript va boucler dans **cats**, on utilise ensuite une **interpolation** afin de display les noms de chats sous forme de **li** de l'index 0 du **tableau** jusqu'au dernier
