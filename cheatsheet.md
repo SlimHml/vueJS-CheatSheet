@@ -71,3 +71,11 @@ Dans cet exemple, la **fonction** sera executée lors du **cycle de vie** **MOUN
 ![alt text](./images/screenVue15.png)
 
 Le **console.log** du screenshot du dessus pose problème, en effet, il n'accepte pas de CL dans le script, pour régler ceci, il faut se rendre ici: ![alt text](./images/screenVue16.png) et insérer dans **rules** le **no-console: false ou 0**
+
+![alt text](./images/screenVue17.png)
+
+Nous obtenons effectivement une promesse dans le console.log
+
+![alt text](./images/screenVue18.png)
+
+Ci-dessus, une fonction **data** pond un **objet** contenant un **tableau** nommé **questions**, celui-ci sera rempli via la succession de .then, qui a parser a réponse en **.json**, puis injecter ce **jsonData** dans le **tableau questions** avec le **.result** qui va bien, ce **.result** correspond à ce que l'**API** emet, celle-ci emet un code, et **result**, qui contient les **questions / réponses**
