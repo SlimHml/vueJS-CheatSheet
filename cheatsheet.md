@@ -111,3 +111,13 @@ Ensuite, ci-dessus, elle attache un **écouteur d'évènement** avec la directiv
 ![alt text](./images/screenVue26.png)
 
 Puis ci-dessus, enfin un **props** qui le lie au **v-bind** du **parent** (App.vue), avec sa nature: **Function**
+
+Il y'a un soucis désormais, currentQuestion est **undefined**, car pendant un bref instant, la donnée est inexistante, elle va donc rajouter une condition, tant que la donnée n'est pas fetch (GET) et qu'elle est sauvegardée dans le **tableau**, le **composant** **QuestionBox** ne sera pas rendu, donc pour résumer:
+
+Obtenir la data => la stocker dans le tableau => Afficher le composant avec les données en le forçant à attendre
+
+![alt text](./images/screenVue28.png)
+
+Donc elle applique un **v-if**, avec comme condition: si la longueur du tableau est vraie (donc non vide) alors tu sers le composant **QuestionBox**
+
+Le bouton **next** fonctionne désormais correctement, la donnée est chargée dans le tableau avant le composant, tout va bien
