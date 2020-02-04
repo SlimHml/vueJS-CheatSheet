@@ -79,3 +79,7 @@ Nous obtenons effectivement une promesse dans le console.log
 ![alt text](./images/screenVue18.png)
 
 Ci-dessus, une fonction **data** pond un **objet** contenant un **tableau** nommé **questions**, celui-ci sera rempli via la succession de .then, qui a parsé la réponse en **.json**, puis injecter ce **jsonData** dans le **tableau questions** avec le **.result** qui va bien, ce **.result** correspond à ce que l'**API** emet, celle-ci emet un code, et **result**, qui contient les **questions / réponses**
+
+![alt text](./images/screenVue19.png)
+
+Nous pouvons voir ci-dessus, dans le **Vue devtools** que le **tableau questions** détient **10 index** après chargement de la page, (ce nombre de questions générées a été spécifié sur le site de l'API consommée), et chaque **index** correspond à un **objet** avec les **clés / valeurs**
