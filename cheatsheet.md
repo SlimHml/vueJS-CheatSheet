@@ -32,3 +32,6 @@ Ici, on a ajouté un nouvel **écouteur d'évènement**, qui est sur keyup, si o
 ![alt text](./images/screenVue7.png)
 
 Simple modification afin de **clean** l'input, la methode **addKitty** se voit ajouter une string vide sur **l'input** où est branché le **v-model**
+
+![alt text](./images/screenVue8.png)
+il est possible d'ajouter des **filters**, ici indiqué par les **pipes** dans **l'interpolation**, juste après le **v-for**, ces indiquations vont **trigger** la **fonction** capitalize puis la **fonction** kittify
