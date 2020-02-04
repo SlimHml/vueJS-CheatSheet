@@ -102,12 +102,12 @@ Ci-dessus, afin de pouvoir passer à la question suivante (donc index 1, puis 2,
 
 ![alt text](./images/screenVue27.png)
 
-Cette **fonction** est ensuite **v-bindée** dans la balise enfant **QuestionBox** aussi
+Ci-dessus Cette **fonction** est ensuite **v-bindée** dans la balise enfant **QuestionBox** aussi
 
 ![alt text](./images/screenVue25.png)
 
-Ensuite elle attache un **écouteur d'évènement** avec la directive **v-on:click** (ici raccourcit avec **@click**) sur un bouton
+Ensuite, ci-dessus, elle attache un **écouteur d'évènement** avec la directive **v-on:click** (ici raccourcit avec **@click**) sur un bouton, qui déclenchera la **fonction next** (qui incrémente l'index de 1)
 
 ![alt text](./images/screenVue26.png)
 
-Puis enfin un **props** qui le lie au **v-bind** du **parent** (App.vue), avec sa nature: **Function**
+Puis ci-dessus, enfin un **props** qui le lie au **v-bind** du **parent** (App.vue), avec sa nature: **Function**
