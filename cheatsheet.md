@@ -17,3 +17,7 @@ Ici, **l'interpolation** (les doubles accolades, ou moustaches) permet d'adapter
 Ici, on indique dans la data **cats**, qui est un **tableau**, des noms de chats écrits en dur
 
 Grâce à la directive **v-for**, branchée à une **li** dans ce cas-ci, javascript va boucler dans **cats**, on utilise ensuite une **interpolation** afin de display les noms de chats sous forme de **li** de l'index 0 du **tableau** jusqu'au dernier
+
+![alt text](./images/screenVue4.png)
+
+Ici même chose, nous pouvons boucler dans un tableau **d'objets**, on indique dans **l'interpolation** que l'on veut boucler dans le **nom** des chats
