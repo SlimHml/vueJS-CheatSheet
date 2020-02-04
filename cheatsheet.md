@@ -95,3 +95,15 @@ Il y'a dont **l'interpolation** dans la balise où nous souhaitons y mettre nos 
 ![alt text](./images/screenVue22.png)
 
 La première question est donc affichée dans l'emplacement indiqué
+
+![alt text](./images/screenVue24.png)
+
+Ci-dessus, afin de pouvoir passer à la question suivante (donc index 1, puis 2, puis 3 etc), elle crée une **methods**, avec une **fonction** next, aec une simple **incrémentation**
+
+![alt text](./images/screenVue27.png)
+
+Cette **fonction** est ensuite **v-bindée** dans la balise enfant **QuestionBox** aussi
+
+![alt text](./images/screenVue25.png)
+
+Ensuite elle attache un **écouteur d'évènement** avec la directive **v-on:click** (ici raccourcit avec **@click**)
