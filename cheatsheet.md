@@ -43,3 +43,9 @@ Une **computed property** est une fonction "**greffée**", qui permet d'alléger
 En effet, une propriété calculée sera réévaluée uniquement quand certaines de ses dépendances auront changé. Cela signifie que tant que **newCat** n’a pas changé, les multiples accès à la propriété calculée **kittifyName** retourneront immédiatement le résultat précédemment calculé sans avoir à réexécuter la fonction.
 
 Nous pouvons aussi utiliser une méthode, mais celle-ci peut être couteuse en performance sur de grands tableaux, la doc de VueJS à propos des **computed properties** est à revoir
+
+Mais grosso modo, il s'agit d'améliorer les performances dans certains cas
+
+![alt text](./images/screenVue11.png)
+
+Ici, nous abordons la notion de composant, il est crée dans ce cas ci, dans une instance "**component**", avec le nom du composant (cat-list), nous avons utilisé la directive **v-bind** dans le HTML dans la **balise auto fermante** incluse dans la balise racine (#root), avec dans son template la même **li** contenant le **v-for**, un **v-bind** à un endroit nécessite que l'on le lie grâce au **props** dans le script de l'endroit où nous incluons ce fameux **composant**
