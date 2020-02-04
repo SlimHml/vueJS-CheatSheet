@@ -106,4 +106,8 @@ Cette **fonction** est ensuite **v-bindée** dans la balise enfant **QuestionBox
 
 ![alt text](./images/screenVue25.png)
 
-Ensuite elle attache un **écouteur d'évènement** avec la directive **v-on:click** (ici raccourcit avec **@click**)
+Ensuite elle attache un **écouteur d'évènement** avec la directive **v-on:click** (ici raccourcit avec **@click**) sur un bouton
+
+![alt text](./images/screenVue26.png)
+
+Puis enfin un **props** qui le lie au **v-bind** du **parent** (App.vue), avec sa nature: **Function**
