@@ -83,3 +83,11 @@ Ci-dessus, une fonction **data** pond un **objet** contenant un **tableau** nomm
 ![alt text](./images/screenVue19.png)
 
 Nous pouvons voir ci-dessus, dans le **Vue devtools** que le **tableau questions** détient **10 index** après chargement de la page, (ce nombre de questions générées a été spécifié sur le site de l'API consommée), et chaque **index** correspond à un **objet** avec les **clés / valeurs**
+
+![alt text](./images/screenVue20.png)
+
+Afin de remplir la **balise enfant** **QuestionBox** avec les questions / réponses, on va appliquer un **v-bind** (ici raccourcit avec " : ") à la balise du composant, le nom de la variable, ainsi que **[index]** (qui indique **0** dans la **data** afin d'afficher la première question du **tableau**), mais pour que cela fonctionne, il faut attacher un props dans **QuestionBox.vue** et y mettre une interpolation là où l'on veut que la donnée soit injectée
+
+![alt text](./images/screenVue21.png)
+
+Il y'a dont **l'interpolation** dans la balise où nous souhaitons y mettre nos questions, mais afin d'utiliser cette **variable**, le **props** a bien été collé dans le **script**, avec le nom de la **variable** contenu dans le **parent** (**App.vue**), et désignant sa **nature**, en l'occurence: **Object**
