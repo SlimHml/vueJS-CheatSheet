@@ -121,3 +121,31 @@ Obtenir la data => la stocker dans le tableau => Afficher le composant avec les 
 Donc elle applique un **v-if**, avec comme condition: si la longueur du tableau est vraie (donc non vide) alors tu sers le composant **QuestionBox**
 
 Le bouton **next** fonctionne désormais correctement, la donnée est chargée dans le tableau avant le composant, tout va bien
+
+### methods: Construction d'une URL
+
+```
+buildUrl: function( route, params ){
+            Object.keys( params ).forEach( ( key, index ) => {
+              route += ( index == 0 ? '?' : '&' ) + key + "=" + params[ key ]
+            })
+            return route
+        },
+```
+
+Cette fonction prend deux paramètres, la route, et les params
+La route de base est connue pour telle ou telle fonctionnalité, exemple: 'www.google.com', mais pour une route particulière, il faut
+construire l'URL, on va décomposer la fonction ci-dessus
+
+Les params est une convention, il est un objet qui contient les paramètres de notre URL, un forEach est donc appliqué afin d'itérer sur
+chacunes de ses clés et de ses index.
+
+Donc prenons comme exemple **params** qui contient ceci: {imgChienId:42, rigolo:"fun"}
+
+Route+= (additionne à route ('www.google.com')) **?** si **l'index** de **params** est de 0, **&** ensuite. Le **&** s'additionne ensuite car la route est désormais "www.google.com?imgChienId=42" et que l'index à ce niveau == 1
+
+
+La route sera donc construite comme ceci: www.google.com?imgChienId=42&rigolo=fun
+
+Le **=**, la **clé** et la **valeur de la clé** s'insèrent entre les **?** et les **&** car on concatène la route avec la **clé** (+ key)
+, le **=** (+ "=") puis la valeur de la clé dans l'ordre de l'itération **(+ params[ key ])** 
