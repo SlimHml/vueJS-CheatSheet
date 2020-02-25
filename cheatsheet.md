@@ -149,3 +149,24 @@ La route sera donc construite comme ceci: www.google.com?imgChienId=42&rigolo=fu
 
 Le **=**, la **clé** et la **valeur de la clé** s'insèrent entre les **?** et les **&** car on concatène la route avec la **clé** (+ key)
 , le **=** (+ "=") puis la valeur de la clé dans l'ordre de l'itération **(+ params[ key ])** 
+
+```
+data(){
+   top: [],         
+}
+getChiensData: function ( type = 'categorie' ) {
+          let route     = 'animaux/chiens/' + type
+          let params    = { type: type + '_wtf', top: 5 }
+          // Construction de l'URL
+          let url       = this.buildUrl( route, params )
+          axios.get( url )
+              .then( ( res ) => {this.top = res.data})
+```
+Ici, un cas d'utilisation de notre fonction précédente **buildUrl**, on crée un tableau vide dans data, de n'importe quel nom.
+On déclare une nouvelle fonction dans methods, on déclare une variable contenant notre route de base pour cette requête api, en l'occurence animaux/chien/categorie.
+On déclare nos params, un objet, type: type n'est pas forcément très lisible, mais dans ce cas que j'ai rencontré, je devais passer **categorie** dans un composant enfant afin d'afficher la data directement en arrivant sur la page pour des soucis pratiques
+Sinon pour un cas classique, ne donnez pas de paramètres à la fonction.
+
+Nous déclarons ensuite une variable qui appelle buildUrl dans le contexte environnant, le **this** fait donc appel à la fonction **buildUrl**, avec comme paramètres nos deux variables **route** et **params**, la fonction va les assembler et construire l'url que nous souhaitions
+
+La requête API est ensuite executée sur **url** contenant notre url fraîchement crée, et utilise la promesse .then afin d'envoyer cette donnée dans notre tableau vide **this.top**
